@@ -1,4 +1,4 @@
-div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, th, td {
+div, h1, h2 {
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@ html {
   margin: 0px;
 }
 
-.user, .session, .share, .save, .run {
+.user, .session {
     position: absolute;
     top: 20px;
     font-size : 14px;
@@ -23,18 +23,17 @@ html {
   right: 132px;
 }
 
-.save {
+.save, .share, .run, .clear {
+    margin: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 29px;
     width: 118px;
-
     border: 1px solid rgb(237, 237, 237);
     outline: 0px none;
     background: rgb(245, 245, 245) none repeat scroll 0% 0%;
-    margin-left: 0px;
-    
+    margin-left: 0px;    
 }
 
 .title {
@@ -137,7 +136,6 @@ h1 {
   position: relative;
   display: flex;
   background: rgb(221, 221, 221) none repeat scroll 0% 0%;
-  cursor: col-resize;
   width: 12px;
 }
 
@@ -153,4 +151,14 @@ nav {
   justify-content: center;
   align-items: center;
   height: 50px;
+}
+
+.white {
+  color: rgb(238, 238, 238);
+}
+
+.clear {
+    color: rgb(118, 119, 119);
+    background: transparent none repeat scroll 0% 0%;
+    border: 1px solid rgb(118, 119, 119);
 }
