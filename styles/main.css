@@ -89,7 +89,7 @@ h1 {
 }
 
 .items{
-  float: right;
+  
   height: 30px;
   max-width: 100%;
   margin-right: 2%;
@@ -102,13 +102,57 @@ h1 {
 }
 
 .coding {
-  height: 90%;
-  width:50%;
-  float: left;
+  height: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  left: 0px;
+  bottom: 0px;
+  width: calc(58.8381% - 6px);
 }
 
 .compiler {
-  height:90%;
-  width: 50%;
-  background-color: white;
+    height: 100%;
+    position: relative;
+    display: block;
+    background: rgb(14, 22, 40) none repeat scroll 0% 0%;
+    width: calc(41.1619% - 6px);
+}
+
+.settings {
+    position: relative;
+    display: flex;
+    height: 30px;
+    left: 10px;
+    top: 10px;
+}
+
+.settings {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.border {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background: rgb(221, 221, 221) none repeat scroll 0% 0%;
+  flex: 1 0 auto;
+  cursor: col-resize;
+  width: 12px;
+}
+
+.env {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  height: 93.5%;
+  width: 100%;
 }
